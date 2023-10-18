@@ -8,10 +8,10 @@ import 'package:flutter/material.dart';
 class UpperNameWithIcons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        const TitleWithOptionalButton(
-          titleText: 'Hi,' + ' ',
+        TitleWithOptionalButton(
+          titleText: 'Hi,' ' ',
           activatedButton: false,
           buttonText: 'buttonText',
           buttonIcon: Icons.abc,
@@ -29,10 +29,10 @@ class UpperNameWithIcons extends StatelessWidget {
         //     ),
         //   ],
         // ),
-        const SizedBox(height: 10),
+        SizedBox(height: 10),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: const [
+          children: [
             NumberText(num: '1', text: 'Coupons'),
             NumberText(num: '0', text: 'Points'),
             IconTextInButton(iconD: Icons.wallet_sharp, text: 'Wallet'),
@@ -40,7 +40,7 @@ class UpperNameWithIcons extends StatelessWidget {
                 iconD: Icons.card_giftcard_sharp, text: 'Gift Card'),
           ],
         ),
-        const SizedBox(height: 10),
+        SizedBox(height: 10),
       ],
     );
   }

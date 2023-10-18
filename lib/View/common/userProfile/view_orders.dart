@@ -7,20 +7,20 @@ import 'icon_text_button.dart';
 class ViewOrders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        const SizedBox(height: 5),
-        const TitleWithOptionalButton(
+        SizedBox(height: 5),
+        TitleWithOptionalButton(
           titleText: 'My Orders',
           activatedButton: true,
           buttonText: 'View All',
           buttonIcon: Icons.arrow_forward_ios_sharp,
           paddingForTitle: 8.0,
         ),
-        const SizedBox(height: 10),
+        SizedBox(height: 10),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: const [
+          children: [
             IconTextInButton(iconD: Icons.credit_card_sharp, text: 'Unpaid'),
             IconTextInButton(
                 iconD: Icons.account_balance_wallet_sharp, text: 'Processing'),
@@ -30,7 +30,7 @@ class ViewOrders extends StatelessWidget {
             IconTextInButton(iconD: Icons.keyboard_return, text: 'Returns'),
           ],
         ),
-        const SizedBox(height: 10),
+        SizedBox(height: 10),
       ],
     );
   }
